@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/addimage"
+    tools:context="com.example.badal.fourth_assign.AddItem">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/colorAccent"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <EditText
+        android:id="@+id/new_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/coloryellow"
+        android:layout_marginRight="16dp"
+        android:textColorHint="@color/coloryellow"
+        android:hint="Enter title "/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorAccent"
+        style="?android:listSeparatorTextViewStyle"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actor Name"
+            android:id="@+id/actView"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="37dp"
+            android:id="@+id/nactorname"
+            android:textColor="@color/coloryellow"
+            android:textColorHint="@color/coloryellow"
+            android:hint="Enter actor name "
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actress Name"
+            android:id="@+id/actrView"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/nactressname"
+            android:textColor="@color/coloryellow"
+            android:textColorHint="@color/coloryellow"
+            android:hint="Enter actress name "
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+        <Button
+            android:id="@+id/add_movie"
+            android:layout_marginRight="16dp"
+            android:text="Add"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_width="125dp"
+            android:layout_height="33dp"
+            android:background="@drawable/buttonshape2"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
